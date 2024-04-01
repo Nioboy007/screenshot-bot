@@ -11,7 +11,7 @@ class Config:
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://appuz:chrijismiappuz@cluster0.yngvhc2.mongodb.net/?retryWrites=true&w=majority")
     AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "6883997969").split(" ")]
     MAX_PROCESSES_PER_USER = int(os.environ.get("MAX_PROCESSES_PER_USER", 5))
-    MAX_TRIM_DURATION = int(os.environ.get("MAX_TRIM_DURATION", 6000))
+    MAX_TRIM_DURATION = int(os.environ.get("MAX_TRIM_DURATION", 600))
     TRACK_CHANNEL = int(os.environ.get("TRACK_CHANNEL", False))
     SLOW_SPEED_DELAY = int(os.environ.get("SLOW_SPEED_DELAY", 5))
     HOST = os.environ.get("HOST", "")
